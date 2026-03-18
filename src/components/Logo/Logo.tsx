@@ -7,8 +7,8 @@ import HubLogoSvg         from '../../logos/hub-logo.svg?react'
 import HubLogoDarkSvg     from '../../logos/hub-logo-dark.svg?react'
 import HubLogoStackedSvg  from '../../logos/hub-logo-stacked.svg?react'
 import HubFaviconSvg      from '../../logos/hub-favicon.svg?react'
-import HubGPTLogoSvg      from '../../logos/hubgpt-logo.svg?react'
-import HubGPTFaviconSvg   from '../../logos/hubgpt-favicon.svg?react'
+import MegaAILogoSvg      from '../../logos/megaai-logo.svg?react'
+import MegaAIFaviconSvg   from '../../logos/megaai-favicon.svg?react'
 import PeopleXLogoSvg     from '../../logos/peoplex-logo.svg?react'
 
 export type LogoProps = {
@@ -35,6 +35,6 @@ export const HubLogo        = makeLogoComponent(HubLogoSvg)
 export const HubLogoDark    = makeLogoComponent(HubLogoDarkSvg)
 export const HubLogoStacked = makeLogoComponent(HubLogoStackedSvg)
 export const HubFavicon     = makeLogoComponent(HubFaviconSvg)
-export const HubGPTLogo     = makeLogoComponent(HubGPTLogoSvg)
-export const HubGPTFavicon  = makeLogoComponent(HubGPTFaviconSvg)
+export const MegaAILogo     = makeLogoComponent(MegaAILogoSvg)
+export const MegaAIFavicon  = makeLogoComponent(MegaAIFaviconSvg)
 export const PeopleXLogo    = makeLogoComponent(PeopleXLogoSvg)

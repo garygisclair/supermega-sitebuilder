@@ -283,7 +283,7 @@
   gap: 16px;
 }
 
-.sb-menubar__btn--hubgpt {
+.sb-menubar__btn--megaai {
   grid-column: 3;
   justify-self: end;
 }
@@ -322,7 +322,7 @@
   border-color: #054aa3;
 }
 
-.sb-menubar__btn--hubgpt {
+.sb-menubar__btn--megaai {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -340,7 +340,7 @@
   transition: color 0.3s ease;
 }
 
-.sb-menubar__hubgpt-gradient {
+.sb-menubar__megaai-gradient {
   position: absolute;
   inset: 0;
   border-radius: 48px;
@@ -349,29 +349,29 @@
   transition: opacity 0.3s ease;
 }
 
-.sb-menubar__btn--hubgpt:hover .sb-menubar__hubgpt-gradient,
-.sb-menubar__btn--hubgpt--active .sb-menubar__hubgpt-gradient {
+.sb-menubar__btn--megaai:hover .sb-menubar__megaai-gradient,
+.sb-menubar__btn--megaai--active .sb-menubar__megaai-gradient {
   opacity: 1;
 }
 
-.sb-menubar__btn--hubgpt:hover,
-.sb-menubar__btn--hubgpt--active {
+.sb-menubar__btn--megaai:hover,
+.sb-menubar__btn--megaai--active {
   color: #fff;
 }
 
-.sb-menubar__hubgpt-icon {
+.sb-menubar__megaai-icon {
   position: relative;
   flex-shrink: 0;
   z-index: 1;
   transition: transform 0.3s ease;
 }
 
-.sb-menubar__btn--hubgpt:hover .sb-menubar__hubgpt-icon,
-.sb-menubar__btn--hubgpt--active .sb-menubar__hubgpt-icon {
+.sb-menubar__btn--megaai:hover .sb-menubar__megaai-icon,
+.sb-menubar__btn--megaai--active .sb-menubar__megaai-icon {
   transform: scale(1.15);
 }
 
-.sb-menubar__hubgpt-label {
+.sb-menubar__megaai-label {
   position: relative;
   z-index: 1;
   font-weight: 600;

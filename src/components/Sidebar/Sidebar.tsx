@@ -26,7 +26,7 @@ const TOOL_ITEMS = [
   { name: 'Bookmarks',           icon: <Icon name="bookmark"       size={20} />, showChevron: true  },
   { name: 'Book a Meeting Room', icon: <Icon name="hub-bookspace"  size={20} />                     },
   { name: 'YJMMD',               icon: <Icon name="hub-yjmmd"      size={20} />                     },
-  { name: 'HubGPT',              icon: <Icon name="robot"          size={20} />                     },
+  { name: 'MegaAI',              icon: <Icon name="robot"          size={20} />                     },
   { name: 'Glean',               icon: <ToolLogo name="glean" size={20} />,
                                   trailingIcon: <Icon name="external-link" size={16} className="sm-sidebar-menu-item__chevron" /> },
   { name: 'All Tools',           icon: <Icon name="categories"     size={20} />                     },

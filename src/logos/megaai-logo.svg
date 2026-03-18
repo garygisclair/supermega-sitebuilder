@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 28" fill="none">
+  <path d="M12 4l2 5h5l-4 3 1.5 5L12 14l-4.5 3L9 12 5 9h5z" fill="#7C3AED"/>
+  <circle cx="12" cy="14" r="1.5" fill="#ffffff"/>
+  <text x="24" y="20" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#7C3AED" letter-spacing="-0.01em">MegaAI</text>
+</svg>

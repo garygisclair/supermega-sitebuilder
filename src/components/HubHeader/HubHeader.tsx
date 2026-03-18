@@ -17,7 +17,7 @@ export interface HubHeaderProps {
   onSearchChange?: (value: string) => void
   aiToolsLabel?: string
   onAiToolsClick?: () => void
-  onHubGptClick?: () => void
+  onMegaAiClick?: () => void
   onChatGptClick?: () => void
   onLocationClick?: () => void
   onMenuClick?: () => void
@@ -37,7 +37,7 @@ export const HubHeader: React.FC<HubHeaderProps> = ({
   onSearchChange,
   aiToolsLabel = 'AI Tools',
   onAiToolsClick,
-  onHubGptClick,
+  onMegaAiClick,
   onChatGptClick,
   onLocationClick,
   onMenuClick,
@@ -93,7 +93,7 @@ export const HubHeader: React.FC<HubHeaderProps> = ({
             </button>
             {/* AI icon buttons — always visible inside pill */}
             <div className="sm-hub-header__ai-icons">
-              <button type="button" className="sm-hub-header__icon-btn sm-hub-header__icon-btn--sm" onClick={onHubGptClick} aria-label="HubGPT">
+              <button type="button" className="sm-hub-header__icon-btn sm-hub-header__icon-btn--sm" onClick={onMegaAiClick} aria-label="MegaAI">
                 <Icon name="robot" size={24} />
               </button>
               <button type="button" className="sm-hub-header__icon-btn sm-hub-header__icon-btn--sm" onClick={onChatGptClick} aria-label="ChatGPT">

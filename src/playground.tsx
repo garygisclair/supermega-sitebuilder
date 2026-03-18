@@ -377,7 +377,7 @@ export function Playground() {
                 <path d="M2.05 8A6.8 6.8 0 002 8.75v4.5c0 .25.02.5.05.75H2a2 2 0 01-2-2v-2a2 2 0 012-2h.05zM17.95 14c.03-.25.05-.5.05-.75v-4.5c0-.25-.02-.5-.05-.75H18a2 2 0 012 2v2a2 2 0 01-2 2h-.05z" fill="currentColor"/>
               </svg>
               <span className="sb-chat__header-title">
-                Hub<strong>GPT</strong>
+                Mega<strong>AI</strong>
               </span>
               <svg className="sb-chat__header-badge" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <circle cx="8" cy="8" r="7" fill="#3665f3"/>
@@ -422,7 +422,7 @@ export function Playground() {
                     <path d="M2.05 8A6.8 6.8 0 002 8.75v4.5c0 .25.02.5.05.75H2a2 2 0 01-2-2v-2a2 2 0 012-2h.05zM17.95 14c.03-.25.05-.5.05-.75v-4.5c0-.25-.02-.5-.05-.75H18a2 2 0 012 2v2a2 2 0 01-2 2h-.05z" fill="#3665f3"/>
                   </svg>
                 </div>
-                <h3 className="sb-chat__welcome-title">Ask HubGPT about<br /><span className="sb-chat__welcome-highlight">building your site</span></h3>
+                <h3 className="sb-chat__welcome-title">Ask MegaAI about<br /><span className="sb-chat__welcome-highlight">building your site</span></h3>
                 <p className="sb-chat__welcome-desc">
                   Describe the page you want to build and I'll assemble the widgets for you.
                 </p>
@@ -484,7 +484,7 @@ export function Playground() {
               </button>
             </div>
             <p className="sb-chat__disclaimer">
-              For questions about using HubGPT responsibly see <a href="#">HubGPT FAQ</a>
+              For questions about using MegaAI responsibly see <a href="#">MegaAI FAQ</a>
             </p>
           </div>
         </aside>
@@ -502,16 +502,16 @@ export function Playground() {
         </div>
         <button
           type="button"
-          className={`sb-menubar__btn sb-menubar__btn--hubgpt ${chatOpen ? 'sb-menubar__btn--hubgpt--active' : ''}`}
+          className={`sb-menubar__btn sb-menubar__btn--megaai ${chatOpen ? 'sb-menubar__btn--megaai--active' : ''}`}
           onClick={() => setChatOpen(!chatOpen)}
         >
-          <span className="sb-menubar__hubgpt-gradient" />
-          <svg className="sb-menubar__hubgpt-icon" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <span className="sb-menubar__megaai-gradient" />
+          <svg className="sb-menubar__megaai-icon" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path d="M12.27 11.29a1.13 1.13 0 01.71 0l.12.04a.75.75 0 00.47-1.42l-.12-.04a2.63 2.63 0 00-1.82 0l-.12.04a.75.75 0 00.47 1.42l.12-.04zM7.73 11.29a1.13 1.13 0 00-.71 0l-.12.04a.75.75 0 01-.47-1.42l.12-.04a2.63 2.63 0 011.82 0l.12.04a.75.75 0 01-.47 1.42l-.12-.04z" fill="currentColor"/>
             <path fillRule="evenodd" clipRule="evenodd" d="M6.97 2.26a.75.75 0 10-1.45.39l.42 1.58A5.75 5.75 0 002.75 8.75v4.5A5.25 5.25 0 007.75 18.25h4.5a5.25 5.25 0 005-5v-4.5a5.75 5.75 0 00-2.83-4.93l.4-1.56a.75.75 0 00-1.45-.39l-.66 1.52c-.15-.01-.3-.01-.46-.01h-4.5c-.14 0-.27.01-.4.02L6.97 2.26zM4.75 8.75A3 3 0 017.75 5.75h4.5a3 3 0 013 3v4.5a3 3 0 01-3 3h-4.5a3 3 0 01-3-3v-4.5z" fill="currentColor"/>
             <path d="M2.05 8A6.8 6.8 0 002 8.75v4.5c0 .25.02.5.05.75H2a2 2 0 01-2-2v-2a2 2 0 012-2h.05zM17.95 14c.03-.25.05-.5.05-.75v-4.5c0-.25-.02-.5-.05-.75H18a2 2 0 012 2v2a2 2 0 01-2 2h-.05z" fill="currentColor"/>
           </svg>
-          <span className="sb-menubar__hubgpt-label">Ask HubGPT</span>
+          <span className="sb-menubar__megaai-label">Ask MegaAI</span>
         </button>
       </div>
 

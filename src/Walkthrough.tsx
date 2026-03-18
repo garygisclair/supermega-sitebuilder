@@ -13,8 +13,8 @@ const STEPS = [
     pointer: 'center' as const,
   },
   {
-    title: 'Step 1: Open HubGPT',
-    body: 'Click the "Ask HubGPT" button in the bottom-right corner to open the AI chat panel.',
+    title: 'Step 1: Open MegaAI',
+    body: 'Click the "Ask MegaAI" button in the bottom-right corner to open the AI chat panel.',
     pointer: 'bottom-right' as const,
   },
   {
