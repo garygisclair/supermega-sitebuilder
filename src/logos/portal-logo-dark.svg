@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 121 28" fill="none">
+  <polygon points="12,2 22,7 22,17 12,22 2,17 2,7" fill="#60A5FA"/>
+  <polygon points="12,6 18,9 18,15 12,18 6,15 6,9" fill="#1E3A5F"/>
+  <text x="28" y="20" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="600" fill="#ffffff" letter-spacing="-0.01em">Portal</text>
+</svg>

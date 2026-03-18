@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { HubLogo, HubLogoStacked } from '../Logo/Logo'
+import { PortalLogo, PortalLogoStacked } from '../Logo/Logo'
 import { Icon } from '../Icon/Icon'
 import { NavBarAvatar } from '../NavBarAvatar/NavBarAvatar'
 import './HubHeader.css'
@@ -71,12 +71,12 @@ export const HubHeader: React.FC<HubHeaderProps> = ({
 
         {/* Mobile only: stacked logo */}
         <button type="button" className="sm-hub-header__logo-stacked-btn" onClick={onLogoClick} aria-label="Home">
-          <HubLogoStacked width={48} height={48} />
+          <PortalLogoStacked width={48} height={48} />
         </button>
 
         {/* ≥768: horizontal logo */}
         <button type="button" className="sm-hub-header__logo-btn" onClick={onLogoClick} aria-label="Home">
-          <HubLogo width={121} height={28} />
+          <PortalLogo width={121} height={28} />
         </button>
 
         {/* ≥768: location + AI tools pill */}
