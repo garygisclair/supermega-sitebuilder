@@ -1,0 +1,113 @@
+/* ── Container ────────────────────────────────────────────────── */
+.sm-section-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-gap-4);          /* 16px */
+  padding: var(--spacing-p-3) var(--spacing-p-3) var(--spacing-p-3) var(--spacing-p-4);
+  /* 12px 12px 12px 16px */
+  border-radius: var(--radius-medium); /* 16px */
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ── Strong backgrounds (type-specific) ───────────────────────── */
+.sm-section-notice--attention.sm-section-notice--strong    { background: var(--bg-status-attention-subtle); }
+.sm-section-notice--warning.sm-section-notice--strong      { background: var(--bg-status-warning-subtle); }
+.sm-section-notice--confirmation.sm-section-notice--strong { background: var(--bg-status-success-subtle); }
+.sm-section-notice--information.sm-section-notice--strong  { background: var(--bg-accent-subtle); }
+.sm-section-notice--general.sm-section-notice--strong      { background: var(--bg-tertiary); }
+
+/* ── Subtle background (same for all types) ───────────────────── */
+.sm-section-notice--subtle { background: var(--bg-secondary); }
+
+/* ── Icon wrapper ─────────────────────────────────────────────── */
+.sm-section-notice__icon-wrap {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 6px 0; /* vertically centers 16px icon with first line of body text */
+}
+
+/* Icon color per type — sets currentColor for SVG fills */
+.sm-section-notice--attention    .sm-section-notice__icon-wrap { color: var(--fg-status-attention); }
+.sm-section-notice--warning      .sm-section-notice__icon-wrap { color: var(--fg-status-warning); }
+.sm-section-notice--confirmation .sm-section-notice__icon-wrap { color: var(--fg-status-success); }
+.sm-section-notice--information  .sm-section-notice__icon-wrap { color: var(--fg-information); }
+
+/* ── Content area (flex-wrap: text left, action right) ────────── */
+.sm-section-notice__content-area {
+  display: flex;
+  flex: 1 1 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px 40px; /* row-gap col-gap — action flows right or wraps below */
+  padding: var(--spacing-p-1) var(--spacing-p-1) var(--spacing-p-1) 0; /* 4px 4px 4px 0 */
+  min-width: 0;
+}
+
+/* ── Text block (title + body) ────────────────────────────────── */
+.sm-section-notice__content {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.sm-section-notice__title {
+  display: block;
+  font-family: var(--font-family-primary);
+  font-size: var(--type-body-size);          /* 14px */
+  font-weight: var(--font-weight-bold);
+  line-height: var(--type-body-line-height); /* 20px */
+  color: var(--fg-primary);
+}
+
+.sm-section-notice__body {
+  display: block;
+  font-family: var(--font-family-primary);
+  font-size: var(--type-body-size);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--type-body-line-height);
+  color: var(--fg-primary);
+}
+
+/* ── Action link ──────────────────────────────────────────────── */
+.sm-section-notice__action {
+  flex-shrink: 0;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--font-family-primary);
+  font-size: var(--type-body-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--type-body-line-height);
+  color: var(--fg-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.sm-section-notice__action:hover { opacity: 0.75; }
+
+/* ── Dismiss button ───────────────────────────────────────────── */
+.sm-section-notice__dismiss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--fg-primary);
+  position: relative;
+  transition: background 0.1s ease;
+}
+
+.sm-section-notice__dismiss:hover  { background: var(--state-hover); }
+.sm-section-notice__dismiss:active { background: var(--state-pressed); }

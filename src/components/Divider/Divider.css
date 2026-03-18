@@ -1,0 +1,35 @@
+/* ── Wrapper ─────────────────────────────────────────────────── */
+.sm-divider {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.sm-divider--horizontal {
+  flex-direction: column;
+  width: 100%;
+  height: 1px;
+}
+
+.sm-divider--vertical {
+  flex-direction: row;
+  width: 1px;
+  height: 100%;
+}
+
+/* ── Insets (padding pushes the line back from each edge) ─────── */
+.sm-divider--horizontal.sm-divider--inset-16 {
+  padding: 0 var(--spacing-p-4); /* 0 16px */
+}
+
+.sm-divider--vertical.sm-divider--inset-16 {
+  padding: var(--spacing-p-4) 0; /* 16px 0 */
+}
+
+/* ── Line ────────────────────────────────────────────────────── */
+.sm-divider__line {
+  flex: 1 0 0;
+  background: var(--border-subtle);
+  border-radius: 8px;
+  min-height: 1px;
+  min-width: 1px;
+}

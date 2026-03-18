@@ -1,0 +1,19 @@
+/* Global resets and base styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  background-color: var(--bg-secondary);
+  color: var(--fg-primary);
+}

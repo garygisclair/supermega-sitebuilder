@@ -1,0 +1,164 @@
+/* ── Walkthrough Card ─────────────────────────────────────────────────────── */
+
+.wt-card {
+  position: fixed;
+  z-index: 1000;
+  width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  animation: wt-fade-in 0.3s ease;
+}
+
+@keyframes wt-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Positions ───────────────────────────────────────────────────────────── */
+
+.wt-card--center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wt-card--bottom-right {
+  bottom: 90px;
+  right: 24px;
+}
+
+.wt-card--right {
+  top: 50%;
+  right: 310px;
+  transform: translateY(-50%);
+}
+
+.wt-card--left {
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+}
+
+.wt-card--top-left {
+  top: 100px;
+  left: 80px;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+
+.wt-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.wt-card__step-badge {
+  font-family: 'Market Sans', 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3665f3;
+  background: #eef3fe;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.wt-card__dismiss {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #a2a2a2;
+  border-radius: 50%;
+  padding: 0;
+  transition: background 0.1s ease, color 0.1s ease;
+}
+
+.wt-card__dismiss:hover {
+  background: #f0f0f0;
+  color: #191919;
+}
+
+/* ── Inline icon ─────────────────────────────────────────────────────────── */
+
+.wt-card__inline-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 600;
+  color: #191919;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.wt-card__inline-icon svg {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -0.5px;
+}
+
+/* ── Content ─────────────────────────────────────────────────────────────── */
+
+.wt-card__title {
+  margin: 0;
+  font-family: 'Market Sans', 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #191919;
+  line-height: 1.3;
+}
+
+.wt-card__body {
+  margin: 8px 0 0;
+  font-family: 'Market Sans', 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #545459;
+}
+
+/* ── Actions ─────────────────────────────────────────────────────────────── */
+
+.wt-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.wt-card__btn {
+  font-family: 'Market Sans', 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  border: none;
+}
+
+.wt-card__btn--primary {
+  background: #3665f3;
+  color: #fff;
+}
+
+.wt-card__btn--primary:hover {
+  background: #2d57d9;
+}
+
+.wt-card__btn--secondary {
+  background: #f0f0f0;
+  color: #545459;
+}
+
+.wt-card__btn--secondary:hover {
+  background: #e4e4e4;
+}

@@ -1,0 +1,110 @@
+/* ── Base ─────────────────────────────────────────────────────── */
+.sm-icon-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  flex-shrink: 0;
+  outline: none;
+  transition: opacity 0.1s ease;
+}
+
+.sm-icon-btn:disabled {
+  cursor: not-allowed;
+}
+
+/* ── Sizes ───────────────────────────────────────────────────── */
+.sm-icon-btn--large  { width: 48px; height: 48px; }
+.sm-icon-btn--medium { width: 40px; height: 40px; }
+.sm-icon-btn--small  { width: 32px; height: 32px; }
+
+/* ── Styles ──────────────────────────────────────────────────── */
+.sm-icon-btn--primary {
+  background: var(--bg-accent);
+  color: var(--fg-on-accent);
+}
+.sm-icon-btn--primary:disabled {
+  background: var(--bg-disabled);
+  color: var(--fg-on-disabled);
+}
+
+.sm-icon-btn--secondary {
+  background: transparent;
+  border: 1px solid var(--border-accent);
+  color: var(--fg-information);
+}
+.sm-icon-btn--secondary:disabled {
+  border-color: var(--border-disabled);
+  color: var(--fg-disabled);
+}
+
+.sm-icon-btn--tertiary {
+  background: transparent;
+  border: 1px solid var(--border-medium);
+  color: var(--fg-primary);
+}
+.sm-icon-btn--tertiary:disabled {
+  border-color: var(--border-disabled);
+  color: var(--fg-disabled);
+}
+
+.sm-icon-btn--borderless {
+  background: transparent;
+  color: var(--fg-primary);
+}
+.sm-icon-btn--borderless:disabled {
+  color: var(--fg-disabled);
+}
+
+/* ── State layer (::before) ──────────────────────────────────── */
+.sm-icon-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease;
+}
+
+.sm-icon-btn--primary::before                        { background: #ffffff; }
+.sm-icon-btn--primary:hover:not(:disabled)::before   { opacity: 0.16; }
+.sm-icon-btn--primary:active:not(:disabled)::before  { opacity: 0.24; }
+
+.sm-icon-btn--secondary::before,
+.sm-icon-btn--tertiary::before,
+.sm-icon-btn--borderless::before                             { background: #000000; }
+.sm-icon-btn--secondary:hover:not(:disabled)::before,
+.sm-icon-btn--tertiary:hover:not(:disabled)::before,
+.sm-icon-btn--borderless:hover:not(:disabled)::before        { opacity: 0.04; }
+.sm-icon-btn--secondary:active:not(:disabled)::before,
+.sm-icon-btn--tertiary:active:not(:disabled)::before,
+.sm-icon-btn--borderless:active:not(:disabled)::before       { opacity: 0.08; }
+
+/* ── Loading ─────────────────────────────────────────────────── */
+.sm-icon-btn--loading {
+  cursor: default;
+  pointer-events: none;
+}
+
+.sm-icon-btn--loading .sm-icon-btn__icon {
+  visibility: hidden;
+}
+
+.sm-icon-btn__loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Primary loading: white spinner */
+.sm-icon-btn--primary .sm-icon-btn__loading .sm-spinner {
+  border-color: rgba(255, 255, 255, 0.3);
+  border-top-color: #fff;
+}

@@ -1,0 +1,214 @@
+/* ── Shared Block Styles ──────────────────────────────────────────────────── */
+
+.sb-block {
+  width: 100%;
+  font-family: 'Market Sans', 'Inter', sans-serif;
+}
+
+/* ── Header Large ────────────────────────────────────────────────────────── */
+
+.sb-block-header-large {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.sb-block-header-large__bg {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.sb-block-header-large__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.1) 50%, transparent 70%);
+}
+
+.sb-block-header-large__content {
+  position: relative;
+  z-index: 1;
+  padding: 0 11.4%;
+  max-width: 800px;
+}
+
+.sb-block-header-large__title {
+  margin: 0;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.sb-block-header-large__subtitle {
+  margin: 16px 0 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.sb-block-header-large__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  padding: 10px 20px;
+  border: 2px solid #cffcf0;
+  background: none;
+  color: #cffcf0;
+  font-family: 'Market Sans', 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.sb-block-header-large__btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sb-block-header-large__btn-arrow {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* ── 2 Column Text ───────────────────────────────────────────────────────── */
+
+.sb-block-2col-text {
+  background: #fff;
+  padding: 64px 11.4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.sb-block-2col-text__col-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+}
+
+.sb-block-2col-text__col-body {
+  margin: 16px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.16px;
+  color: #000;
+}
+
+/* ── Image / Text Split ──────────────────────────────────────────────────── */
+
+.sb-block-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 400px;
+  background: #eee;
+  overflow: hidden;
+}
+
+.sb-block-split__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10% 0 22.8%;
+}
+
+.sb-block-split__title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+}
+
+.sb-block-split__body {
+  margin: 20px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #000;
+}
+
+.sb-block-split__link {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #006efc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sb-block-split__link:hover {
+  text-decoration: underline;
+}
+
+.sb-block-split__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── 3 Card Image Links ──────────────────────────────────────────────────── */
+
+.sb-block-3cards {
+  background: #fff;
+  padding: 48px 12%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.sb-block-3cards__card {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  aspect-ratio: 355 / 261;
+}
+
+.sb-block-3cards__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sb-block-3cards__card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.55) 0%, transparent 100%);
+}
+
+.sb-block-3cards__card-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+.sb-block-3cards__card-body {
+  margin: 8px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.06;
+  color: #fff;
+}
+
+/* ── Grey Separator ──────────────────────────────────────────────────────── */
+
+.sb-block-separator {
+  height: 42px;
+  background: #f9f9f9;
+}

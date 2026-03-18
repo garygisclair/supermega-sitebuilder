@@ -1,0 +1,50 @@
+.sm-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 1024px;
+  background: var(--bg-primary);
+  border-right: 1px solid var(--border-subtle);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sm-sidebar--expanded {
+  width: 240px;
+}
+
+.sm-sidebar--collapsed {
+  width: 64px;
+}
+
+/* ── Interactive: collapsed by default, floats over content on hover ─── */
+.sm-sidebar--interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  overflow: hidden;
+  transition: width 0.2s ease;
+  z-index: 100;
+}
+
+.sm-sidebar--interactive:hover {
+  width: 240px;
+}
+
+/* Hide trailing icons (chevron, external-link) when collapsed */
+.sm-sidebar--interactive .sm-sidebar-menu-item__trailing {
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.sm-sidebar--interactive:hover .sm-sidebar-menu-item__trailing {
+  opacity: 1;
+}
+
+/* ── Section ─────────────────────────────────────────────── */
+.sm-sidebar__section {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  flex-shrink: 0;
+}

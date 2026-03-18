@@ -1,0 +1,241 @@
+/* ── Skeleton Shimmer Animation ───────────────────────────────────────────── */
+
+@keyframes sb-shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.sb-skel__bone {
+  background: linear-gradient(90deg, #e8e8e8 25%, #f5f5f5 50%, #e8e8e8 75%);
+  background-size: 800px 100%;
+  animation: sb-shimmer 1.6s ease-in-out infinite;
+  border-radius: 4px;
+}
+
+/* ── Block fade-in + blue glow ────────────────────────────────────────────── */
+
+.sb-block--reveal {
+  animation: sb-fade-in 0.5s ease forwards;
+  position: relative;
+  overflow: hidden;
+}
+
+.sb-block--reveal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 66, 0.25) 0%,
+    rgba(153, 62, 224, 0.3) 35%,
+    rgba(9, 104, 246, 0.25) 65%,
+    transparent 100%
+  );
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: sb-gradient-sweep 0.9s ease forwards;
+  pointer-events: none;
+}
+
+@keyframes sb-gradient-sweep {
+  0% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  70% {
+    opacity: 0.6;
+    transform: translateX(60%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+@keyframes sb-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Header Large Skeleton ───────────────────────────────────────────────── */
+
+.sb-skel-header-large {
+  height: 500px;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sb-skel-header-large__content {
+  padding: 0 11.4%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sb-skel-header-large__title {
+  width: 380px;
+  height: 46px;
+  background: linear-gradient(90deg, #d0d0d0 25%, #ddd 50%, #d0d0d0 75%);
+  background-size: 800px 100%;
+  animation: sb-shimmer 1.6s ease-in-out infinite;
+  border-radius: 6px;
+}
+
+.sb-skel-header-large__subtitle {
+  width: 520px;
+  height: 18px;
+  background: linear-gradient(90deg, #d0d0d0 25%, #ddd 50%, #d0d0d0 75%);
+  background-size: 800px 100%;
+  animation: sb-shimmer 1.6s ease-in-out infinite;
+}
+
+.sb-skel-header-large__subtitle--short {
+  width: 340px;
+}
+
+.sb-skel-header-large__btn {
+  width: 150px;
+  height: 40px;
+  margin-top: 12px;
+  background: linear-gradient(90deg, #d0d0d0 25%, #ddd 50%, #d0d0d0 75%);
+  background-size: 800px 100%;
+  animation: sb-shimmer 1.6s ease-in-out infinite;
+  border-radius: 3px;
+}
+
+/* ── 2 Column Text Skeleton ──────────────────────────────────────────────── */
+
+.sb-skel-2col {
+  background: #fff;
+  padding: 42px 11.4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.sb-skel-2col__col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sb-skel-2col__heading {
+  width: 180px;
+  height: 28px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+}
+
+.sb-skel-2col__line {
+  width: 100%;
+  height: 14px;
+}
+
+.sb-skel-2col__line--short {
+  width: 65%;
+}
+
+/* ── Image / Text Split Skeleton ─────────────────────────────────────────── */
+
+.sb-skel-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 400px;
+  background: #f0f0f0;
+  overflow: hidden;
+}
+
+.sb-skel-split__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 11.4%;
+  gap: 12px;
+}
+
+.sb-skel-split__heading {
+  width: 200px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.sb-skel-split__line {
+  width: 100%;
+  height: 14px;
+}
+
+.sb-skel-split__line--short {
+  width: 55%;
+}
+
+.sb-skel-split__link {
+  width: 120px;
+  height: 14px;
+  margin-top: 4px;
+}
+
+.sb-skel-split__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+/* ── 3 Card Image Links Skeleton ─────────────────────────────────────────── */
+
+.sb-skel-3cards {
+  background: #fff;
+  padding: 8px 12%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.sb-skel-3cards__card {
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.sb-skel-3cards__img {
+  width: 100%;
+  aspect-ratio: 355 / 200;
+  border-radius: 0;
+}
+
+.sb-skel-3cards__text {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #f0f0f0;
+}
+
+.sb-skel-3cards__title {
+  width: 140px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.sb-skel-3cards__line {
+  width: 100%;
+  height: 12px;
+}
+
+.sb-skel-3cards__line--short {
+  width: 70%;
+}
+
+/* ── Grey Separator Skeleton ─────────────────────────────────────────────── */
+
+.sb-skel-separator {
+  height: 42px;
+  background: #f4f4f4;
+}
